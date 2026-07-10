@@ -29,7 +29,7 @@ Todo el proyecto vive dentro de este repositorio:
 - `datResultados/` — `HPL.dat` y logs `.log` de cada fase de prueba
 - `markdownInforme/` — informe convertido a Markdown + imágenes
 - `entrega/` — archivos de entrega
-- `InformeHPLmfqcYA.pdf` — informe en PDF
+- `InformeHPL_FINALpdf` — informe en PDF
 
 El `.gitignore` excluye solo archivos generados al compilar (binarios, `.o`, `.a`), así que después de clonar solo falta compilar.
 
