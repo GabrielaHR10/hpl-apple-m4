@@ -1,0 +1,96 @@
+================================================================================
+HPLinpack 2.3  --  High-Performance Linpack benchmark  --   December 2, 2018
+Written by A. Petitet and R. Clint Whaley,  Innovative Computing Laboratory, UTK
+Modified by Piotr Luszczek, Innovative Computing Laboratory, UTK
+Modified by Julien Langou, University of Colorado Denver
+================================================================================
+
+An explanation of the input/output parameters follows:
+T/V    : Wall time / encoded variant.
+N      : The order of the coefficient matrix A.
+NB     : The partitioning blocking factor.
+P      : The number of process rows.
+Q      : The number of process columns.
+Time   : Time in seconds to solve the linear system.
+Gflops : Rate of execution for solving the linear system.
+
+The following parameter values will be used:
+
+N      :    5000 
+NB     :     192 
+PMAP   : Row-major process mapping
+P      :       2 
+Q      :       4 
+PFACT  :   Right 
+NBMIN  :       4 
+NDIV   :       2 
+RFACT  :   Crout 
+BCAST  :  1ringM 
+DEPTH  :       1 
+SWAP   : Mix (threshold = 64)
+L1     : transposed form
+U      : transposed form
+EQUIL  : yes
+ALIGN  : 8 double precision words
+
+--------------------------------------------------------------------------------
+
+- The matrix A is randomly generated for each test.
+- The following scaled residual check will be computed:
+      ||Ax-b||_oo / ( eps * ( || x ||_oo * || A ||_oo + || b ||_oo ) * N )
+- The relative machine precision (eps) is taken to be               1.110223e-16
+- Computational tests pass if scaled residuals are less than                16.0
+
+Column=000000192 Fraction= 3.8% Gflops=7.249e+02
+Column=000000384 Fraction= 7.7% Gflops=4.557e+02
+Column=000000576 Fraction=11.5% Gflops=2.744e+02
+Column=000000768 Fraction=15.4% Gflops=2.944e+02
+Column=000000960 Fraction=19.2% Gflops=1.862e+02
+Column=000001152 Fraction=23.0% Gflops=1.766e+02
+Column=000001344 Fraction=26.9% Gflops=1.720e+02
+Column=000001536 Fraction=30.7% Gflops=1.809e+02
+Column=000001728 Fraction=34.6% Gflops=1.585e+02
+Column=000001920 Fraction=38.4% Gflops=1.553e+02
+Column=000002112 Fraction=42.2% Gflops=1.553e+02
+Column=000002304 Fraction=46.1% Gflops=1.574e+02
+Column=000002496 Fraction=49.9% Gflops=1.498e+02
+Column=000002688 Fraction=53.8% Gflops=1.520e+02
+Column=000002880 Fraction=57.6% Gflops=1.498e+02
+Column=000003072 Fraction=61.4% Gflops=1.523e+02
+Column=000003264 Fraction=65.3% Gflops=1.492e+02
+Column=000003456 Fraction=69.1% Gflops=1.483e+02
+Column=000003648 Fraction=73.0% Gflops=1.472e+02
+Column=000003840 Fraction=76.8% Gflops=1.469e+02
+Column=000004032 Fraction=80.6% Gflops=1.452e+02
+Column=000004224 Fraction=84.5% Gflops=1.447e+02
+Column=000004416 Fraction=88.3% Gflops=1.441e+02
+Column=000004608 Fraction=92.2% Gflops=1.438e+02
+Column=000004800 Fraction=96.0% Gflops=1.435e+02
+Column=000004992 Fraction=99.8% Gflops=1.411e+02
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR11C2R4        5000   192     2     4               0.61             1.3738e+02
+HPL_pdgesv() start time Tue Jun 30 16:07:55 2026
+
+HPL_pdgesv() end time   Tue Jun 30 16:07:55 2026
+
+--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV--VVV-
+Max aggregated wall time rfact . . . :               0.04
++ Max aggregated wall time pfact . . :               0.04
++ Max aggregated wall time mxswp . . :               0.04
+Max aggregated wall time update  . . :               0.57
++ Max aggregated wall time laswp . . :               0.32
+Max aggregated wall time up tr sv  . :               0.02
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=   4.11833083e-03 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+
+End of Tests.
+================================================================================

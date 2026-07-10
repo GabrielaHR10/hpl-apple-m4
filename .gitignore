@@ -1,0 +1,14 @@
+# Código fuente descargado (se puede volver a bajar de netlib)
+hpl-2.3.tar.gz
+
+# Binarios compilados
+hpl-2.3/bin/
+hpl-2.3/lib/
+*.o
+*.a
+
+# Ejecutable de HPL
+xhpl
+
+# Archivos temporales de macOS
+.DS_Store
