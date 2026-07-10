@@ -6,7 +6,7 @@ Evaluación de rendimiento con **HPL (High Performance Linpack)** sobre un MacBo
 
 - macOS (Apple Silicon: M1/M2/M3/M4)
 - [Homebrew](https://brew.sh/)
-- Xcode Command Line Tools (`xcode-select --install`)
+
 
 ## 1. Instalar dependencias
 
@@ -44,7 +44,7 @@ Verifica estas variables si tu ruta de clonado o instalación de Homebrew es dis
 | Variable | Valor esperado | Motivo |
 |---|---|---|
 | `ARCH` | `MacSilicon` | Debe coincidir con el sufijo del archivo `Make.<ARCH>` |
-| `TOPdir` | Ruta donde clonaste el repo + `/hpl-2.3` | **Ajústala si clonaste en otra ubicación** |
+| `TOPdir` | Ruta donde clonaste el repo + `/hpl-2.3` | **Ajústala con TU dirección donde clonaste el repo** |
 | `MPdir` / `MPinc` / `MPlib` | `/opt/homebrew/...` | Ruta de OpenMPI instalado vía Homebrew — ajusta si tu Homebrew está en `/usr/local` (Mac Intel) |
 | `LAlib` | `-framework Accelerate` | Usa Apple Accelerate (BLAS optimizado con AMX) en vez de una BLAS genérica |
 | `CC` | `mpicc` | Compilador C (Apple Clang vía OpenMPI) |
