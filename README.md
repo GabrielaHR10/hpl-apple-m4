@@ -1,6 +1,6 @@
 # hpl-apple-m4
 
-Evaluación de rendimiento con **HPL (High Performance Linpack)** sobre un MacBook Air con chip Apple M4 (16 GB RAM, macOS Sequoia). Este repositorio contiene la configuración, los scripts de ejecución y los resultados usados en el informe `InformeHPL.md`.
+Evaluación de rendimiento con **HPL (High Performance Linpack)** sobre un MacBook Air con chip Apple M4 (16 GB RAM, macOS Sequoia). Este repositorio contiene la configuración, los scripts de ejecución y los resultados usados en el informe `InformeHPL.md`( también disponible como pdf).
 
 ## Requisitos
 
