@@ -605,7 +605,7 @@ Del output obtenido se extrajeron las frecuencias máximas disponibles para cada
 | E-Cluster | Eficiencia | 6 (CPUs 0–5) | 2,892 MHz (2.892 GHz) |
 | P-Cluster | Rendimiento | 4 (CPUs 6–9) | 4,464 MHz (4.464 GHz) |
 
-El rendimiento teórico máximo se calculó con base en la arquitectura del chip Apple M4. Los núcleos de rendimiento (*P-Cores*) cuentan con unidades vectoriales avanzadas que permiten ejecutar hasta 32 FLOPs por ciclo por núcleo en doble precisión (FP64)[^5]. En contraste, los núcleos de eficiencia (*E-Cores*) poseen una estructura simplificada que limita su capacidad a 8 FLOPs por ciclo por núcleo en FP64[^6].
+El rendimiento teórico máximo se calculó con base en la arquitectura del chip Apple M4. Los núcleos de rendimiento (*P-Cores*) cuentan con unidades vectoriales avanzadas que permiten ejecutar hasta 32 FLOPs por ciclo por núcleo en doble precisión (FP64)[^5]. En contraste, los núcleos de eficiencia (*E-Cores*) poseen una estructura simplificada que limita su capacidad a 8 FLOPs por ciclo por núcleo en FP64[^6]. Recuerde que en la fase 4 se confirmó que con np=8 se emplean los 4 núcleos de rendimiento y 4 núcleos de eficiencia, teniendo esto en cuenta el cálculo se realizó de la siguiente manera.
 
 $$R_{\text{P-Cores}} = 4\text{ núcleos} \times 4.464\text{ GHz} \times 32\text{ FLOPs/ciclo} = 571.39\text{ GFLOPS}$$
 
