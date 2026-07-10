@@ -114,20 +114,3 @@ sudo powermetrics -n 1 --samplers cpu_power | grep -E "E-Cluster|P-Cluster|frequ
 
 Esto permite recalcular el rendimiento teórico máximo para tu propio chip, ya que las frecuencias de los núcleos P y E varían entre variantes de Apple Silicon.
 
-## Estructura del repositorio
-
-```
-hpl-apple-m4/
-├── hpl-2.3/                  # Código fuente de HPL 2.3 + Make.MacSilicon
-│   └── bin/MacSilicon/xhpl   # Ejecutable (se genera al compilar, no está versionado)
-├── datResultados/            # HPL.dat y logs .log de cada fase de prueba
-├── markdownInforme/          # Informe en Markdown + imágenes
-├── entrega/                  # Archivos de entrega
-├── InformeHPLmfqcYA.pdf      # Informe en PDF
-├── .gitignore
-└── README.md                 # Este archivo
-```
-
-## Resultado de referencia
-
-Con la configuración óptima (N=37500, NB=256, P=1, Q=8, np=8) se obtuvo **338.53 GFLOPS**, equivalente a ~51% del rendimiento teórico máximo del chip (663.93 GFLOPS). Ver el informe completo para el análisis detallado.
