@@ -112,5 +112,4 @@ system_profiler SPHardwareDataType
 sudo powermetrics -n 1 --samplers cpu_power | grep -E "E-Cluster|P-Cluster|frequency"
 ```
 
-Esto permite recalcular el rendimiento teórico máximo para tu propio chip, ya que las frecuencias de los núcleos P y E varían entre variantes de Apple Silicon.
 
