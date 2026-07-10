@@ -1,6 +1,6 @@
 # hpl-apple-m4
 
-Evaluación de rendimiento con **HPL (High Performance Linpack)** sobre un MacBook Air con chip Apple M4 (16 GB RAM, macOS Sequoia). Este repositorio contiene el código fuente de HPL, el Makefile configurado, los resultados de cada fase de prueba y el informe completo en markdown como el pdf (preferiblemente leer el pdf).
+Evaluación de rendimiento con **HPL (High Performance Linpack)** sobre un MacBook Air con chip Apple M4 (16 GB RAM, macOS Sequoia). Este repositorio contiene el código fuente de HPL, el Makefile configurado, los resultados de cada fase de prueba y el informe completo en markdown como el pdf (preferiblemente leer el pdf dado que el .md del informe fue hecho a partir del pdf usando ia (claude) y puede presentar errores).
 
 ## Requisitos
 
